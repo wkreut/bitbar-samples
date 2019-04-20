@@ -15,7 +15,7 @@ function print_help_and_die() {
 }
 
 if [[ "$#" -eq 1 ]]; then
-    ENV="$1"
+    ENV=
 else
     print_help_and_die
 fi
