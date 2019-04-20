@@ -13,6 +13,7 @@ unzip tests.zip
 echo "Installing pip for python"
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python get-pip.py
+echo "hello world"
 
 echo "Installing Appium Python Client 0.24 and xmlrunner 1.7.7"
 chmod 0755 requirements.txt
@@ -37,7 +38,7 @@ APILEVEL=$(adb shell getprop ro.build.version.sdk)
 APILEVEL="${APILEVEL//[$'\t\r\n']}"
 echo "API level is: ${APILEVEL}"
 
-## APPIUM_AUTOMATION 
+## APPIUM_AUTOMATION
 if [ "$APILEVEL" -gt "16" ]; then
   echo "Setting APPIUM_AUTOMATION=Appium"
   export APPIUM_AUTOMATION="uiautomator2"
