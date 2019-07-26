@@ -1,9 +1,3 @@
-import os
-import argparse
-import unittest
-import importlib
-
-
 class TestdroidTestRunner():
     def __init__(self):
         self.variables = {"TESTDROID_APIKEY": "",
