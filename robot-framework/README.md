@@ -1,4 +1,5 @@
 # Template for Robot Framework
+# Template for Robot Framework
 
 - Libs folder: Place for self made libraries.
 - Tests folder: Contains test files. Resource ``${PROJECTROOT}${/}resources${/}common.robot`` should be included under ``*** settings ***`` on each test file so they can use common resources. Write all test files under this folder.
